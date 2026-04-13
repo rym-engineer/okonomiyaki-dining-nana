@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+font-family: "Noto Sans JP", sans-serif;
+}
+
 header {
   display: flex;
   align-items: stretch;
@@ -102,7 +112,7 @@ main {
   padding: 220px 11vw 0;
   position: relative;
   background-color: #F7F5F0;
-  height:900px;
+  height: 900px;
 }
 
 main img {
@@ -115,9 +125,9 @@ main img {
   border-radius: 50%;
   z-index: 10;
   width: 28%;
-  aspect-ratio: 1 / 1;     
-  object-fit: cover;        
-  height: auto;   
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  height: auto;
 }
 
 .gray {
@@ -129,21 +139,21 @@ main img {
 .okonomiyaki {
   left: 50%;
   top: 350px;
-  width:220px;
-  height:auto;
+  width: 220px;
+  height: auto;
 }
 
 .gyu {
   top: 650px;
   left: 45%;
-  width:180px;
-  height:auto;
+  width: 180px;
+  height: auto;
 }
 
 main h1 {
   position: absolute;
   font-size: 3vw;
-  writing-mode: vertical-rl ;
+  writing-mode: vertical-rl;
   right: 10vw;
   font-weight: normal;
   letter-spacing: 0.5em;
@@ -155,31 +165,195 @@ main h1 span {
   display: inline-block;
 }
 
-.about{
- background-color: #F7F5F0;
- padding: 50px 11vw 100px;
- position:relative;
+.about {
+  background-color: #F7F5F0;
+  padding: 50px 11vw 100px;
+  position: relative;
 }
 
-.about p{
-  width:60%;
+.about p {
+  width: 60%;
   letter-spacing: 0.3em;
-   line-height: 2.2em;
+  line-height: 2.2em;
 }
 
-.cooking{
-  position:absolute;
-  right:15%;
-  top:10%;
-  width:290px;
-  height:200px;
-  z-index:10;
-}
-
-.gray1{
+.cooking {
   position: absolute;
-  right:10%;
-  top:15%;
-  z-index:1;
+  right: 15%;
+  top: 10%;
+  width: 290px;
+  height: 200px;
+  z-index: 10;
 }
 
+.gray1 {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  z-index: 1;
+}
+
+/* menu */
+#menu {
+  background-color: #F7F5F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0 480px;
+}
+
+#menu h2 {
+  border-bottom: 2px solid #000;
+  font-weight: normal;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 8px;
+}
+
+#menu img:hover,
+#menu h2:hover {
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+/* store-guide */
+#store-guide {
+  padding: 390px 15% 190px;
+  background-image: url('../images/background-black.webp');
+  position: relative;
+}
+
+#store-guide h1 {
+  writing-mode: vertical-rl;
+  letter-spacing: 0.5em;
+  position: absolute;
+  left: 52%;
+  top: -280px;
+  transform: translateX(-100%);
+}
+
+#store-guide img {
+  width: 100%;
+  height: auto;
+}
+
+#store-guide p {
+  color: white;
+}
+
+.img-frame {
+  display: flex;
+  gap: 10%;
+  border: 2px solid white;
+  padding: 40px;
+}
+
+.text {
+  display: flex;
+  gap: 10%;
+  padding-top: 60px;
+  position: relative;
+}
+
+.text::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100;
+  height: 85%;
+  border-left: 1px dashed white;
+  transform: translateX(-50%);
+}
+
+/* message */
+.message {
+  background-image: url('../images/okonomiyaki background.webp');
+  padding: 120px 27%;
+  position: relative;
+}
+
+.message::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.message h2,
+.message p {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+
+.message h2 {
+  margin-bottom: 85px;
+}
+
+/* contact */
+.contact {
+  background-image: url('../images/tubutubu.webp');
+  padding: 120px 30%;
+}
+
+.contact div {
+  background-image: url('../images/washi.webp');
+  text-align: center;
+  padding: 55px 12%;
+}
+
+.contact h1 {
+  letter-spacing: 0.2em;
+}
+
+/* cancel */
+.cancel {
+  background-image: url('../images/gray.webp');
+  padding: 120px 30%;
+}
+
+.cancel div {
+  background-image: url('../images/washi.webp');
+  text-align: center;
+  padding: 55px 12%;
+}
+
+.cancel h1 {
+  letter-spacing: 0.2em;
+}
+
+/* store-info */
+#store-info {
+  padding: 45px 20% 150px;
+  background-color: #F7F5F0;
+}
+
+#store-info img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin:105px 0 70px;
+}
+
+#store-info h1 {
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-weight: normal;
+}
+
+#store-info div {
+  display: flex;
+  padding: 15px 5%;
+  border-bottom: 1px dashed #000;
+}
+
+#store-info div:first-of-type {
+  border-top: 1px dashed #000;
+}
+
+#store-info div p:first-child {
+  width: 45%;
+  flex-shrink: 0;
+}
