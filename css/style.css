@@ -132,6 +132,10 @@ main h1 span {
   transform: translateX(-100%);
 }
 
+.white-text {
+  color: white;
+}
+
 #store-guide img {
   width: 100%;
   height: auto;
@@ -151,7 +155,7 @@ main h1 span {
 .text {
   display: flex;
   gap: 10%;
-  padding-top: 60px;
+  padding-top: 80px;
   position: relative;
 }
 
@@ -159,7 +163,7 @@ main h1 span {
   content: "";
   position: absolute;
   left: 50%;
-  top: 100;
+  top: 60px;
   height: 85%;
   border-left: 1px dashed white;
   transform: translateX(-50%);
@@ -243,17 +247,17 @@ main h1 span {
   font-weight: normal;
 }
 
-#store-info div {
+.info-row {
   display: flex;
   padding: 15px 5%;
   border-bottom: 1px dashed #000;
 }
 
-#store-info div:first-of-type {
+.info-row:first-of-type {
   border-top: 1px dashed #000;
 }
 
-#store-info div p:first-child {
+.info-row p:first-child {
   width: 45%;
   flex-shrink: 0;
 }

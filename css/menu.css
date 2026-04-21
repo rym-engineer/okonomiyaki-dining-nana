@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F8F2EA;
+}
+
+header img {
+  width: 10%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+}
+
+section {
+  background-color: #F7F5F0;
+}
+
+.cook {
+  margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  padding: 150px 0;
+}
+
+div:not(.cook) {
+  display: flex;
+  gap: 7%;
+  align-items: center;
+  padding: 70px 0;
+  border-bottom: 1px dashed #000;
+}
+
+.cook div:first-of-type {
+  border-top: 1px dashed #000;
+}
+
+.cook img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+p {
+  font-size: 24px;
+}
