@@ -29,7 +29,6 @@ section {
 .cook {
   margin: 0 auto;
   max-width: 900px;
-  margin: 0 auto;
 }
 
 h1 {
@@ -37,7 +36,7 @@ h1 {
   padding: 150px 0;
 }
 
-div:not(.cook) {
+.cook-item {
   display: flex;
   gap: 7%;
   align-items: center;
@@ -45,8 +44,12 @@ div:not(.cook) {
   border-bottom: 1px dashed #000;
 }
 
-.cook div:first-of-type {
+.cook-item:first-of-type {
   border-top: 1px dashed #000;
+}
+
+.cook-item:last-of-type {
+  border-bottom: none;
 }
 
 .cook img {
@@ -56,6 +59,7 @@ div:not(.cook) {
   flex-shrink: 0;
 }
 
-p {
+.cook p {
   font-size: 24px;
 }
+  

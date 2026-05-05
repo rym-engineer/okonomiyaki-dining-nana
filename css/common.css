@@ -28,6 +28,13 @@ header img {
   background-color: #F8F2EA;
 }
 
+.reserve a {
+  writing-mode: vertical-rl;
+  letter-spacing: 0.17em;
+  font-size: 1.2vw;
+  color:inherit;
+}
+
 .reserve p {
   writing-mode: vertical-rl;
   letter-spacing: 0.17em;
