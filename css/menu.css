@@ -5,6 +5,9 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: #F8F2EA;
+  position:fixed;
+  left:0;
+  right:0;
 }
 
 header img {
@@ -33,15 +36,19 @@ section {
 
 h1 {
   text-align: center;
-  padding: 150px 0;
+  padding: 320px 0 150px;
 }
 
-.cook-item {
+.cook-item a {
   display: flex;
   gap: 7%;
   align-items: center;
   padding: 70px 0;
   border-bottom: 1px dashed #000;
+}
+
+.cook-item a:hover{
+  opacity: 0.4;
 }
 
 .cook-item:first-of-type {
@@ -62,4 +69,12 @@ h1 {
 .cook p {
   font-size: 24px;
 }
-  
+
+.menu img{
+  width:60%;
+  height:auto;
+ text-align: center;
+ display: block;
+  margin: 0 auto;
+  padding:300px 0 100px;
+}

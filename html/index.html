@@ -6,11 +6,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- CSS読み込み -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/style.css">
 
   <!-- フォント関連 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,14 +22,14 @@
 <body>
   <header>
     <div class="reserve">
-      <img src="images/nana.webp">
+      <img src="../images/nana.webp">
       <div>
         <a href="tel:0272668484">Tel:027-266-8484</a>
         <p>ご予約・お問い合わせ</p>
       </div>
     </div>
     <div class="nana">
-      <img src="images/restaurant.webp">
+      <img src="../images/restaurant.webp">
       <nav>
         <ul>
           <li><a href="#">ホーム</a></li>
@@ -39,27 +40,48 @@
         </ul>
       </nav>
     </div>
+    <span class="material-icons" id="open">menu</span>
   </header>
 
+  <div class="overlay">
+    <span class="material-icons" id="close">close</span>
+    <div class="reserve">
+      <img src="../images/nana.webp">
+      <div>
+        <a href="tel:0272668484">Tel:027-266-8484</a>
+        <p>ご予約・お問い合わせ</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#menu">メニュー</a></li>
+        <li><a href="#store-guide">店内のご案内</a></li>
+        <li><a href="#store-info">店舗情報</a></li>
+        <li><a href="#map">地図</a></li>
+      </ul>
+    </nav>
+  </div>
+
   <main>
-    <img class="table" src="images/dining table .webp">
-    <img class="gray" src="images/gray.webp">
-    <img class="okonomiyaki" src="images/okonomiyaki.webp">
-    <img class="gyu" src=images/gyu.webp>
+    <img class="table" src="../images/dining table .webp">
+    <img class="gray" src="../images/gray.webp">
+    <img class="gyu" src="../images/gyu.webp">
     <h1>ナナで味わう<br><span>みんなの時間</span></h1>
+    <img class="okonomiyaki" src="../images/okonomiyaki.webp">
   </main>
 
   <section class="about">
     <p>
       群馬県前橋市小屋原町にて経営している「お好み焼きダイニングナナ」。地域の皆さまに支えられながら、この場所でお店を続けてまいりました。当店では、お好み焼きを中心に、鉄板で仕上げるシンプルな料理を通して、肩肘張らずに楽しめる時間をご提供しています。素材の味を大切にしながら、一枚一枚丁寧に焼き上げ、また食べたいと思っていただける味を目指しています。事前にご相談いただければ、お席やご利用シーンに応じたご対応も可能です。ご家族やご友人とのお食事、お仕事帰りの一杯にも、どうぞお気軽にお立ち寄りください。鉄板を囲みながら、気取らないひとときをお楽しみいただければ幸いです。
     </p>
-    <img class="cooking" src="images/cooking.webp">
-    <img class="gray1" src="images/gray.webp">
+    <img class="cooking" src="../images/cooking.webp">
+    <img class="gray1" src="../images/gray.webp">
   </section>
 
   <section id="menu">
-    <a href="html/menu.html">
-      <img src="images/cook.webp">
+    <a href="../html/menu.html">
+      <img src="../images/cook.webp">
       <h2>メニュー</h2>
     </a>
   </section>
@@ -67,8 +89,8 @@
   <section id="store-guide">
     <h1>料理と時間を<span class="white-text">楽しむ場所</span></h1>
     <div class="img-frame">
-      <img src="images/dining table .webp">
-      <img src="images/zashiki.webp">
+      <img src="../images/dining table .webp">
+      <img src="../images/zashiki.webp">
     </div>
     <div class="text">
       <p>ご家族やご友人同士でのご利用にぴったりなテーブル席。鉄板を囲みながら、焼きたてのお好み焼きをゆっくりお楽しみいただけます。落ち着いた雰囲気の中で、会話とお食事を気兼ねなく楽しめるお席です。</p>
@@ -100,7 +122,7 @@
 
   <section id="store-info">
     <h1>店舗情報</h1>
-    <img src="images/restaurant.webp">
+    <img src="../images/restaurant.webp">
     <div class="info-row">
       <p>店名</p>
       <p>お好み焼きダイニングナナ</p>

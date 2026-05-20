@@ -14,10 +14,6 @@ header {
   align-items: stretch;
 }
 
-header img {
-  width: 100%
-}
-
 .nana {
   width: 80%;
   position: relative;
@@ -32,7 +28,7 @@ header img {
   writing-mode: vertical-rl;
   letter-spacing: 0.17em;
   font-size: 1.2vw;
-  color:inherit;
+  color: inherit;
 }
 
 .reserve p {
@@ -106,4 +102,101 @@ li::before {
 
 li:hover {
   opacity: 0.4;
+}
+
+#open {
+  display: none;
+}
+
+.overlay{
+  display: none;
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+
+  .nana {
+    width: 100%;
+  }
+
+  .nana nav {
+    display: none;
+  }
+
+  .reserve {
+    width: 100%;
+    display: flex;
+  }
+
+  .reserve img {
+    flex: none;
+    width: 50%;
+    padding: 10% 10%;
+  }
+
+  .reserve a {
+    writing-mode: horizontal-tb;
+    font-size: 2vw;
+    order: 2;
+  }
+
+  .reserve p {
+    writing-mode: horizontal-tb;
+    font-size: 2vw;
+    order: 1;
+  }
+
+  .reserve div {
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 50px;
+    padding-top: 80px;
+  }
+
+  .reserve div::before,
+  .reserve div::after {
+    display: none;
+  }
+
+  .material-icons {
+    font-size: 8vw;
+    cursor: pointer;
+    padding: 20px 40px;
+  }
+
+  #open {
+    display: block;
+    position: fixed;
+    right: 0;
+    z-index: 100;
+  }
+
+  #close {
+    position: fixed;
+    right: 0;
+    cursor: pointer;
+  }
+
+  #open.hide {
+    display: none;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #F8F2EA;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 300;
+  }
+
+  .overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
