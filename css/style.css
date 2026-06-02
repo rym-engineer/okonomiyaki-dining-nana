@@ -337,7 +337,6 @@ small {
     top: -20%;
     right: 0;
     width: 50%;
-    /* height:280px; */
     height: 30%;
   }
 
@@ -392,6 +391,10 @@ small {
 }
 
 @media (max-width: 700px) {
+  .about p {
+    font-size: 1.5vw;
+  }
+
   #menu {
     justify-content: flex-start;
     padding: 120px 100px 480px;
@@ -412,10 +415,87 @@ small {
     padding-right: 0;
     width: fit-content;
   }
+
+  #store-info {
+    padding: 45px 10% 150px;
+  }
+
+  .message {
+    padding: 120px 5%;
+  }
+
+  .gray1 {
+    height: 40%;
+    top: -30%;
+  }
 }
 
 @media (max-width: 550px) {
+
+main{
+  padding-top:80px;
+}
+
+  main h1 {
+    font-size: 4vw;
+  }
+
   #menu {
     padding: 120px 0 480px;
   }
+
+  .okonomiyaki {
+    top:60%;
+  }
+
+  .gray1 {
+    top: -230%;
+    height:120%;
+  }
+
+  .gyu {
+    top: 70%;
+  }
+
+  .cooking {
+    top: -120%;
+  }
+
+  .about {
+    padding: 20px 0 20px;
+  }
+
+}
+
+@media (max-width: 420px) {
+main {
+  height: 800px;
+}
+
+  #store-info {
+    padding: 45px 0 150px;
+  }
+
+  .okonomiyaki{
+    top:60%;
+  }
+
+  .gyu {
+    top: 70%;
+  }
+
+  .cooking {
+    top: -200%;
+  }
+
+  .gray1{
+    top:-350%;
+    height:180%;
+  }
+
+  .about {
+    padding:0;
+  }
+
+
 }

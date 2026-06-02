@@ -108,7 +108,7 @@ li:hover {
   display: none;
 }
 
-.overlay{
+.overlay {
   display: none;
 }
 
@@ -193,10 +193,29 @@ li:hover {
     opacity: 0;
     pointer-events: none;
     z-index: 300;
+    display: block;
   }
 
   .overlay.show {
     opacity: 1;
     pointer-events: auto;
+  }
+
+  .overlay li {
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  .overlay nav a {
+    border-bottom: 1px solid black;
+  }
+
+  .overlay a {
+    color: black;
+  }
+
+  li::before {
+    display: none;
   }
 }

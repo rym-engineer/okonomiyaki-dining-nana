@@ -14,4 +14,12 @@
     overlay.classList.remove('show');
     open.classList.remove('hide');
   });
+
+  const overlayLinks = overlay.querySelectorAll('nav a');
+  overlayLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      overlay.classList.remove('show');
+      open.classList.remove('hide');
+    });
+  })
 }
